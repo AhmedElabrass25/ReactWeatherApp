@@ -1,0 +1,24 @@
+{
+  "lat": "30.06263N",
+  "lon": "31.24967E",
+  "elevation": 23,
+  "timezone": "Africa/Cairo",
+  "units": "metric",
+  "current": {
+    "icon": "partly_sunny",
+    "icon_num": 4,
+    "summary": "Partly sunny",
+    "temperature": 12.2,
+    "feels_like": 9.0,
+    "wind_chill": 10.5,
+    "dew_point": -0.2,
+    "wind": { "speed": 3.8, "gusts": 7.7, "angle": 350, "dir": "N" },
+    "precipitation": { "total": 0.0, "type": "none" },
+    "cloud_cover": 44,
+    "ozone": 322.09,
+    "pressure": 1027,
+    "uv_index": 3.62,
+    "humidity": 42,
+    "visibility": 24.13
+  }
+}

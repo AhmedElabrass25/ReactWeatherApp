@@ -1,0 +1,85 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+body,
+html {
+  font-family: "Comfortaa", serif;
+}
+
+body {
+  background-color: var(--main-bg-color);
+}
+
+.container {
+  padding-left: 30px;
+  padding-right: 30px;
+}
+
+.row {
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+}
+
+:root {
+  /* // DARK THEME COLORS */
+  --main-bg-color: #18191a;
+  --header-bg-color: #242526;
+  --border-color: #393a3b;
+  --primary-text-color: #e4e6eb;
+  --secondary-text-color: #b0b3b8;
+}
+
+.light {
+  /* LIGHT THEME COLORS */
+  --main-bg-color: #f0f2f5;
+  --header-bg-color: #ffffff;
+  --border-color: #ced0d4;
+  --primary-text-color: #050505;
+  --secondary-text-color: #65676b;
+}
+
+.active {
+  background-color: var(--primary-text-color);
+  color: var(--main-bg-color);
+}
+
+/* <<<<<<<<<<< Loader >>>>>>>>>> */
+
+/* HTML: <div class="loader"></div> */
+
+.loader {
+  width: 50px;
+  aspect-ratio: 1;
+  display: grid;
+  border: 4px solid #0000;
+  border-radius: 50%;
+  border-color: #ccc #0000;
+  animation: l16 1s infinite linear;
+}
+
+.loader::before,
+.loader::after {
+  content: "";
+  grid-area: 1/1;
+  margin: 2px;
+  border: inherit;
+  border-radius: 50%;
+}
+
+.loader::before {
+  border-color: #f03355 #0000;
+  animation: inherit;
+  animation-duration: 0.5s;
+  animation-direction: reverse;
+}
+
+.loader::after {
+  margin: 8px;
+}
+
+@keyframes l16 {
+  100% {
+    transform: rotate(1turn);
+  }
+}
